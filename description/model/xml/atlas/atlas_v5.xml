@@ -15,7 +15,7 @@
     </default>
     <visual>
         <rgba com="0.502 1.0 0 1.0" fog="0 0 0 1" contactpoint="0.4 0.4 0.4 0.8"
-            contactforce="0.0 0.0 0.8 0.5" />
+            contactforce="0.0 0.9 0.9 0.5" />
         <scale com="0.05" forcewidth="0.04" contactwidth="0.10" contactheight="0.005"
             selectpoint="0.01" />
         <map force="0.005" />
@@ -346,7 +346,7 @@
             </body>
         </body>
 
-       <!--  <body name="throw_box1" pos="0.0 -1.0 0.12" gravcomp="0">
+        <body name="throw_box1" pos="0.0 -1.0 0.12" gravcomp="0">
             <inertial pos="0 0 0" quat="1 0 0 0" mass="8.607" diaginertia="0.0012 0.0012 0.0012" />
             <geom class="collision" size="0.05 0.05 0.05" type="box" rgba="0.1 0.5 0.5 1" />
             <joint name="throw_box1" type="free" />
@@ -368,47 +368,11 @@
             <inertial pos="0 0 0" quat="1 0 0 0" mass="8.607" diaginertia="0.0012 0.0012 0.0012" />
             <geom class="collision" size="0.04 0.04 0.04" type="box" rgba="0.9 0.5 0.9 1" />
             <joint name="throw_box4" type="free" />
-        </body> -->
-
-        <body name="box1" pos="0.06 0 0" gravcomp="0">
-            <inertial pos="0 0 0" quat="1 0 0 0" mass="1.607" diaginertia="0.0012 0.0012 0.0012" />
-            <geom class="collision" size="1.03 1.03 0.03" type="box" rgba="0.5 0.5 0.5 1" euler="0 0 0" />
-        </body>
-        <body name="box2" pos="2.0 0 0.06" gravcomp="0">
-            <inertial pos="0 0 0" quat="1 0 0 0" mass="1.607" diaginertia="0.0012 0.0012 0.0012" />
-            <geom class="collision" size="1.03 1.03 0.03" type="box" rgba="0.5 0.5 0.5 1" euler="0 0 0" />
-        </body>
-
-        <body name="box3" pos="4.0 0 0.12" gravcomp="0">
-            <inertial pos="0 0 0" quat="1 0 0 0" mass="1.607" diaginertia="0.0012 0.0012 0.0012" />
-            <geom class="collision" size="1.03 1.03 0.03" type="box" rgba="0.5 0.5 0.5 1" euler="0 0 0" />
-        </body>
-
-        <body name="box4" pos="6.0 0 0.18" gravcomp="0">
-            <inertial pos="0 0 0" quat="1 0 0 0" mass="1.607" diaginertia="0.0012 0.0012 0.0012" />
-            <geom class="collision" size="1.03 1.03 0.03" type="box" rgba="0.5 0.5 0.5 1" euler="0 0 0" />
-        </body>
-
-        <body name="box5" pos="8 0 0.12" gravcomp="0">
-            <inertial pos="0 0 0" quat="1 0 0 0" mass="1.607" diaginertia="0.0012 0.0012 0.0012" />
-            <geom class="collision" size="1.03 1.03 0.03" type="box" rgba="0.5 0.5 0.5 1" euler="0 0 0" />
-        </body>
-        <body name="box6" pos="10.0 0 0.06" gravcomp="0">
-            <inertial pos="0 0 0" quat="1 0 0 0" mass="1.607" diaginertia="0.0012 0.0012 0.0012" />
-            <geom class="collision" size="1.03 1.03 0.03" type="box" rgba="0.5 0.5 0.5 1" euler="0 0 0" />
-        </body>
-
-        <body name="box7" pos="12.0 0 0.0" gravcomp="0">
-            <inertial pos="0 0 0" quat="1 0 0 0" mass="1.607" diaginertia="0.0012 0.0012 0.0012" />
-            <geom class="collision" size="1.03 1.03 0.03" type="box" rgba="0.5 0.5 0.5 1" euler="0 0 0"/>
         </body>
 
     </worldbody>
 
     <actuator>
-        <!-- <motor name="back_bkz" joint="back_bkz" gear="1" />
-        <motor name="back_bky" joint="back_bky" gear="1" />
-        <motor name="back_bkx" joint="back_bkx" gear="1" /> -->
 
         <motor name="l_arm_shz" joint="l_arm_shz" gear="1" />
         <motor name="l_arm_shx" joint="l_arm_shx" gear="1" />
@@ -440,39 +404,6 @@
         <motor name="r_leg_aky" joint="r_leg_aky" gear="1" />
         <motor name="r_leg_akx" joint="r_leg_akx" gear="1" />
 
-        <!--        <motor name="back_bkz" joint="back_bkz" gear="106"/>-->
-        <!--        <motor name="back_bky" joint="back_bky" gear="445"/>-->
-        <!--        <motor name="back_bkx" joint="back_bkx" gear="300"/>-->
-
-        <!--        <motor name="l_arm_shz" joint="l_arm_shz" gear="87"/>-->
-        <!--        <motor name="l_arm_shx" joint="l_arm_shx" gear="99"/>-->
-        <!--        <motor name="l_arm_ely" joint="l_arm_ely" gear="63"/>-->
-        <!--        <motor name="l_arm_elx" joint="l_arm_elx" gear="112"/>-->
-        <!--        <motor name="l_arm_wry" joint="l_arm_wry" gear="25"/>-->
-        <!--        <motor name="l_arm_wrx" joint="l_arm_wrx" gear="25"/>-->
-        <!--        <motor name="l_arm_wry2" joint="l_arm_wry2" gear="25"/>-->
-
-        <!--        <motor name="r_arm_shz" joint="r_arm_shz" gear="87"/>-->
-        <!--        <motor name="r_arm_shx" joint="r_arm_shx" gear="99"/>-->
-        <!--        <motor name="r_arm_ely" joint="r_arm_ely" gear="63"/>-->
-        <!--        <motor name="r_arm_elx" joint="r_arm_elx" gear="112"/>-->
-        <!--        <motor name="r_arm_wry" joint="r_arm_wry" gear="25"/>-->
-        <!--        <motor name="r_arm_wrx" joint="r_arm_wrx" gear="25"/>-->
-        <!--        <motor name="r_arm_wry2" joint="r_arm_wry2" gear="25"/>-->
-
-        <!--        <motor name="l_leg_hpz" joint="l_leg_hpz" gear="275"/>-->
-        <!--        <motor name="l_leg_hpx" joint="l_leg_hpx" gear="530"/>-->
-        <!--        <motor name="l_leg_hpy" joint="l_leg_hpy" gear="840"/>-->
-        <!--        <motor name="l_leg_kny" joint="l_leg_kny" gear="890"/>-->
-        <!--        <motor name="l_leg_aky" joint="l_leg_aky" gear="740"/>-->
-        <!--        <motor name="l_leg_akx" joint="l_leg_akx" gear="360"/>-->
-
-        <!--        <motor name="r_leg_hpz" joint="r_leg_hpz" gear="275"/>-->
-        <!--        <motor name="r_leg_hpx" joint="r_leg_hpx" gear="530"/>-->
-        <!--        <motor name="r_leg_hpy" joint="r_leg_hpy" gear="840"/>-->
-        <!--        <motor name="r_leg_kny" joint="r_leg_kny" gear="890"/>-->
-        <!--        <motor name="r_leg_aky" joint="r_leg_aky" gear="740"/>-->
-        <!--        <motor name="r_leg_akx" joint="r_leg_akx" gear="360"/>-->
     </actuator>
 
     <sensor>
